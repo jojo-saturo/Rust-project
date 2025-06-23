@@ -157,4 +157,18 @@ fn main() {
     };
 
     println!("{}", greeting);
+
+    // Rust Match
+    let day = 4;
+
+    match day {
+        1 => println!("Sunday"),
+        2 => println!("Monday"),
+        3 => println!("Tuesday"),
+        4 => println!("Wednesday"),
+        5 => println!("Thursday"),
+        6 => println!("Friday"),
+        7 => println!("Saturday"),
+        _ => println!("Invalid day."),
+    }
 }
