@@ -36,6 +36,26 @@ fn main() {
     let alp = 'J'; // character
     let text = "Kelechi"; // string
 
-    println!("The number is {},with float {},Boolean {},The letter that start up my name {}.\n My frined {}.", num, dci, my_bool, alp, text);
+    println!("The number is {},with float {},Boolean {},The letter that start up my name {}.\n My friend {}.", num, dci, my_bool, alp, text);
 
+    // Telling Rust the type data
+
+    let fname: &str = "Josiah";
+    let numb: i32 = 22;
+    let height: f64 = 5.8;
+    let ltr: char = 'J';
+    let m_bool: bool = false;
+
+    print!(" My name is {}\n I am {} years old\n I am {} tall\n My name start with letter {}\n You take pictures, {}.", fname, numb, height, ltr, m_bool);
+
+    //Rust Constant
+    // Note: when dealing with constant you have to incude the data type !!!
+    const BIRTHYEAR: i32 = 2003;
+    const FULL_NAME: &str = "Josiah Olaniyi";
+    const PROG_LANG: &str = "Rust";
+
+    println!(" I was born in the year {}", BIRTHYEAR);
+    println!(" My full name is {}", FULL_NAME);
+    println!(" I enjoy writing {}", PROG_LANG);
+    
 }
