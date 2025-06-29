@@ -29,5 +29,13 @@ fn main() {
     name = "Eruobami Deborah Temiloluwa";
     println!("After: {}", name);
     
+    // Rust Data types
+    let num = 9; // integer
+    let dci = 3.56; // float
+    let my_bool = true; // boolean
+    let alp = 'J'; // character
+    let text = "Kelechi"; // string
+
+    println!("The number is {},with float {},Boolean {},The letter that start up my name {}.\n My frined {}.", num, dci, my_bool, alp, text);
 
 }
