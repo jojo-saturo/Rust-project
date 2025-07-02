@@ -36,7 +36,7 @@ fn main() {
     let alp = 'J'; // character
     let text = "Kelechi"; // string
 
-    println!("The number is {},with float {},Boolean {},The letter that start up my name {}.\n My friend {}.", num, dci, my_bool, alp, text);
+    println!("The number is {},with float {},Boolean {},The letter that start up my name {}.\nMy friend {}.", num, dci, my_bool, alp, text);
 
     // Telling Rust the type data
 
@@ -46,7 +46,7 @@ fn main() {
     let ltr: char = 'J';
     let m_bool: bool = false;
 
-    print!(" My name is {}\n I am {} years old\n I am {} tall\n My name start with letter {}\n You take pictures, {}.", fname, numb, height, ltr, m_bool);
+    print!("My name is {}\nI am {} years old\nI am {} tall\nMy name start with letter {}\nYou take pictures, {}.", fname, numb, height, ltr, m_bool);
 
     //Rust Constant
     // Note: when dealing with constant you have to incude the data type !!!
@@ -54,8 +54,22 @@ fn main() {
     const FULL_NAME: &str = "Josiah Olaniyi";
     const PROG_LANG: &str = "Rust";
 
-    println!(" I was born in the year {}", BIRTHYEAR);
-    println!(" My full name is {}", FULL_NAME);
-    println!(" I enjoy writing {}", PROG_LANG);
-    
+    println!("I was born in the year {}", BIRTHYEAR);
+    println!("My full name is {}", FULL_NAME);
+    println!("I enjoy writing {}", PROG_LANG);
+
+    // Note: Adding data type for variables is optional unlike constant
+
+    // Rust Operator
+    let add = 20 + 9;
+    let sub = 150 - 73;
+    let mul = 65 * 14;
+    let div = 400 / 20;
+    let rem = 30 % 7;
+
+    println!("Add {}", add);
+    println!("Sub {}", sub);
+    println!("Mul {}", mul);
+    println!("Div {}", div);
+    println!("Rem {}", rem);
 }
