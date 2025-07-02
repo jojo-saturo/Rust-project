@@ -72,4 +72,34 @@ fn main() {
     println!("Mul {}", mul);
     println!("Div {}", div);
     println!("Rem {}", rem);
+
+
+    let mut x = 10;
+    println!("Start {}", x);
+
+    x += 5;
+    println!("Addition {}", x);
+
+    x -= 3;
+    println!("Subtractio {}", x);
+
+    x *= 2;
+    println!("Multiplication {}", x);
+
+    x /= 6;
+    println!("Division {}", x);
+
+    x %= 9;
+    println!("After {}", x);
+
+    // Comparision Operator (true/false)
+    let a = 13;
+    let y = 7;
+
+    println!("13 == 7: {}", a == y);
+    println!("13 != 7: {}", a != y);
+    println!("13 < 7: {}", a < y);
+    println!("7 < 13: {}", y < a);
+    println!("13 >= 7: {}", a >= y);
+
 }
