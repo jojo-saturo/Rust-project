@@ -102,4 +102,10 @@ fn main() {
     println!("7 < 13: {}", y < a);
     println!("13 >= 7: {}", a >= y);
 
+    // Logical Operator (&& || !)
+    let ife = true;
+    let jojo = false;
+
+    println!("Ifeoluwa is stubborn: {}", ife && !jojo);
+    println!("Jojo is gentle: {}", !jojo);
 }
