@@ -135,4 +135,26 @@ fn main() {
     } else {
         println!("Fail: F");
     }
+
+    // Using if as an expression
+    let num = 10;
+
+    let result = if num % 2 == 0 {
+        "Even"
+    } else {
+        "Odd"
+    };
+    println!("The number {} is {}", num, result);
+
+    let time = 15; // 3 PM in 24-hour format
+
+    let greeting = if time < 12 {
+        "Good morning!"
+    } else if time < 18 {
+        "Good afternoon!"
+    } else {
+        "Good evening!"
+    };
+
+    println!("{}", greeting);
 }
