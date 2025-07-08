@@ -28,7 +28,7 @@ fn main() {
     println!("Before: {}", name);
     name = "Eruobami Deborah Temiloluwa";
     println!("After: {}", name);
-    
+
     // Rust Data types
     let num = 9; // integer
     let dci = 3.56; // float
@@ -36,7 +36,14 @@ fn main() {
     let alp = 'J'; // character
     let text = "Kelechi"; // string
 
-    println!("The number is {},with float {},Boolean {},The letter that start up my name {}.\nMy friend {}.", num, dci, my_bool, alp, text);
+    println!(
+        "The number is {},with float {},Boolean {},The letter that start up my name {}.\nMy friend {}.",
+        num,
+        dci,
+        my_bool,
+        alp,
+        text
+    );
 
     // Telling Rust the type data
 
@@ -46,7 +53,14 @@ fn main() {
     let ltr: char = 'J';
     let m_bool: bool = false;
 
-    print!("My name is {}\nI am {} years old\nI am {} tall\nMy name start with letter {}\nYou take pictures, {}.", fname, numb, height, ltr, m_bool);
+    print!(
+        "My name is {}\nI am {} years old\nI am {} tall\nMy name start with letter {}\nYou take pictures, {}.",
+        fname,
+        numb,
+        height,
+        ltr,
+        m_bool
+    );
 
     //Rust Constant
     // Note: when dealing with constant you have to incude the data type !!!
@@ -73,7 +87,6 @@ fn main() {
     println!("Div {}", div);
     println!("Rem {}", rem);
 
-
     let mut x = 10;
     println!("Start {}", x);
 
@@ -98,15 +111,28 @@ fn main() {
 
     println!("13 == 7: {}", a == y);
     println!("13 != 7: {}", a != y);
-    
-     //  If...else Statement
+
+    //  If...else Statement
     let age = 16;
 
     if age >= 18 {
         println!("You can vote!");
     } else {
         println!("You cannot vote yet!");
+    } 
+
+    // else if Statement
+    let score = 79;
+
+    if score >= 70 {
+        println!("Distinction: A");
+    } else if score >= 60 {
+        println!("Excellent: B");
+    } else if score >= 50 {
+        println!("Good: C");
+    } else if score >= 40 {
+        println!("Pass: D");
+    } else {
+        println!("Fail: F");
     }
 }
-
-   
