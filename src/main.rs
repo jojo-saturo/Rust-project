@@ -98,14 +98,15 @@ fn main() {
 
     println!("13 == 7: {}", a == y);
     println!("13 != 7: {}", a != y);
-    println!("13 < 7: {}", a < y);
-    println!("7 < 13: {}", y < a);
-    println!("13 >= 7: {}", a >= y);
+    
+     //  If...else Statement
+    let age = 16;
 
-    // Logical Operator (&& || !)
-    let ife = true;
-    let jojo = false;
-
-    println!("Ifeoluwa is stubborn: {}", ife && !jojo);
-    println!("Jojo is gentle: {}", !jojo);
+    if age >= 18 {
+        println!("You can vote!");
+    } else {
+        println!("You cannot vote yet!");
+    }
 }
+
+   
