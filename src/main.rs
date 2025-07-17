@@ -171,4 +171,28 @@ fn main() {
         7 => println!("Saturday"),
         _ => println!("Invalid day."),
     }
+
+    let day = 6;
+
+    match day { 
+    1|2|3|4|5 => println!("Weekday"),
+    6|7 => println!("Weekend"),
+    _ => println!("Invalid day."),
+    }
+
+    // Returning values from match
+
+    let day = 3;
+
+    let result = match day {
+        1 => "Sunday",
+        2 => "Monday",
+        3 => "Tuesday",
+        4 => "Wednesday",
+        5 => "Thursday",
+        6 => "Friday",
+        7 => "Saturday",
+        _ => "Invalid day.",
+    };
+    println!("{}", result);
 }
