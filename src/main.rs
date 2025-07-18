@@ -119,7 +119,7 @@ fn main() {
         println!("You can vote!");
     } else {
         println!("You cannot vote yet!");
-    } 
+    }
 
     // else if Statement
     let score = 79;
@@ -139,11 +139,7 @@ fn main() {
     // Using if as an expression
     let num = 10;
 
-    let result = if num % 2 == 0 {
-        "Even"
-    } else {
-        "Odd"
-    };
+    let result = if num % 2 == 0 { "Even" } else { "Odd" };
     println!("The number {} is {}", num, result);
 
     let time = 15; // 3 PM in 24-hour format
@@ -174,10 +170,10 @@ fn main() {
 
     let day = 6;
 
-    match day { 
-    1|2|3|4|5 => println!("Weekday"),
-    6|7 => println!("Weekend"),
-    _ => println!("Invalid day."),
+    match day {
+        1 | 2 | 3 | 4 | 5 => println!("Weekday"),
+        6 | 7 => println!("Weekend"),
+        _ => println!("Invalid day."),
     }
 
     // Returning values from match
@@ -195,4 +191,34 @@ fn main() {
         _ => "Invalid day.",
     };
     println!("{}", result);
+
+    // Loop in Rust
+
+    loop {
+        println!("Olaniyi Josiah");
+        break; // Exit the loop after one iteration
+    }
+
+    let mut count = 1;
+
+    loop {
+        println!("Welcome to Rust!");
+
+        if count == 3 {
+            break; // Exit the loop when count reaches 1
+        }
+
+        count += 1; // Decrement count
+    }
+
+    let mut count = 1;
+
+    let result = loop {
+        println!("Goodbye to TypeScript!");
+        if count == 6 {
+            break count;
+        }
+        count += 1;
+    };
+    println!("Count is: {}", count);
 }
