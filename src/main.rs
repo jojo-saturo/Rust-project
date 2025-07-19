@@ -267,10 +267,44 @@ fn comp_data_types() {
     let mix_turple = (49, "Apple", true);
 
     print!(
-        "Mix_turple: {:?} \n{} is a perfect square \nI love {} \nIs second element a fruit? {}",
+        "Mix_turple: {:?} \n{} is a perfect square \nI love {} \nIs second element a fruit? {}\n",
         mix_turple,
         mix_turple.0,
         mix_turple.1,
         mix_turple.2
     );
+
+    let comp_turple = ("Mathematics", 100, 95.5, true, [1, 2, 3, 4, 5]);
+    println!("Compound Tuple: {:?}", comp_turple);
+
+    // Slices
+    let number_slices: &[i32] = &[10, 20, 30, 40, 50];
+    println!("Number Slices: {:?}", number_slices);
+
+    let book_slices: &[&str] = &[
+        "The Rust Programming Language",
+        "Learning Rust",
+        "Rust in Action",
+    ];
+    println!("Book Slices: {:?}", book_slices);
+
+    let os_slices: &[&String] = &[
+        &"Windows".to_string(),
+        &"Linux".to_string(),
+        &"macOS".to_string(),
+    ];
+    println!("Operating System Slices: {:?}", os_slices);
+
+    // String and string slices (&str)
+    let mut greeting: String = String::from("Good ");
+    greeting.push_str("Morning, People!");
+    println!("00:00-11:59 AM: {}", greeting);
+
+    let mut name: String = String::from("Agubonsim ");
+    name.push_str("Caleb");
+    println!("My friend name is {}", name);
+
+    let mut fruit: String = String::from("Apple, Orange, Grapes,");
+    fruit.push_str(" Banana, Mango, Pineapple");
+    println!("{}", fruit);
 }
