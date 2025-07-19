@@ -254,10 +254,23 @@ fn comp_data_types() {
     let human: (String, i32, f64) = ("Josiah".to_string(), 22, 165.3);
 
     print!(
-        "Human Tuple: {:?}\nName:{}\nAge:{} years old\nHeight:{}cm",
+        "Human Tuple: {:?}\nName:{}\nAge:{} years old\nHeight:{}cm \n",
         human,
         human.0,
         human.1,
         human.2
+    );
+    // tuples use parenthesis () and can hold different data types
+    // Accessing tuple elements using index var.0, var.1, var.2, etc.
+
+    //let mix_turple: (i32, String, bool) = (49, "Apple".to_string(), true);
+    let mix_turple = (49, "Apple", true);
+
+    print!(
+        "Mix_turple: {:?} \n{} is a perfect square \nI love {} \nIs second element a fruit? {}",
+        mix_turple,
+        mix_turple.0,
+        mix_turple.1,
+        mix_turple.2
     );
 }
