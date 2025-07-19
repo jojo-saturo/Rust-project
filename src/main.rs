@@ -1,5 +1,5 @@
 fn main() {
-    println!("Hello, world!");
+    /* println!("Hello, world!");
     println!("I am learning Rust.");
     println!("It is Intresting!");
 
@@ -220,5 +220,44 @@ fn main() {
         }
         count += 1;
     };
-    println!("Count is: {}", count);
+    println!("Count is: {}", count); */
+
+    // Compund Data Types
+    comp_data_types();
+}
+
+fn comp_data_types() {
+    // Array, Turples, slices and String(String slice)
+
+    // Array
+    let numbers: [i32; 5] = [1, 2, 3, 4, 5];
+    //println!("Numbers of Array: {}", numbers); Display format for arrays
+    // We cant use {} here because it only works with string, we can use {:?} to print array
+    println!("Numbers of Array: {:?}", numbers); // Debug format for arrays
+
+    // Debugable format print all the elements in the array
+
+    // Display format print only one element in the array
+
+    // Calling an array element
+    println!("Third element: {}", numbers[2]);
+    println!("Last element: {}", numbers[4]);
+
+    let name: [&str; 3] = ["Eruobami", "Deborah", "Temiloluwa"];
+    println!("Names Array: {:?}", name);
+
+    println!("Last Name: {}", name[2]);
+    println!("First Name: {}", name[0]);
+    println!("Second Name: {}", name[1]);
+
+    // Tuples
+    let human: (String, i32, f64) = ("Josiah".to_string(), 22, 165.3);
+
+    print!(
+        "Human Tuple: {:?}\nName:{}\nAge:{} years old\nHeight:{}cm",
+        human,
+        human.0,
+        human.1,
+        human.2
+    );
 }
