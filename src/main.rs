@@ -307,4 +307,9 @@ fn comp_data_types() {
     let mut fruit: String = String::from("Apple, Orange, Grapes,");
     fruit.push_str(" Banana, Mango, Pineapple");
     println!("{}", fruit);
+
+    let class: String = String::from("Grade 10, Section A");
+    println!("Class: {}", class);
+    let class_slice: &str = &class[0..8];
+    println!("Class: {}", class_slice);
 }
