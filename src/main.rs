@@ -220,13 +220,35 @@ fn main() {
         }
         count += 1;
     };
-    println!("Count is: {}", count); */
+    println!("Count is: {}", count); 
 
     // Compund Data Types
-    comp_data_types();
+    comp_data_types(); */
+
+    // Expression
+
+    let mult_me: i32 = {
+        let price: i32 = 12;
+        let tax: i32 = 29;
+        price * tax 
+    };
+    println!("The total price is: {}", mult_me);
+
+    // Calling a variable in parenthesis
+    whyte_id("Agubonsim Caleb", 22, 183.7);
+
+    add_me(5, 10);
+    let result = add_me(5, 10);
+    println!("The result is: {}", result);
 }
 
-fn comp_data_types() {
+fn add_me(a: i32, b: i32) -> i32 {
+    //return a + b; 
+    a + b
+}
+
+/*
+fn comp_data_types() { 
     // Array, Turples, slices and String(String slice)
 
     // Array
@@ -311,5 +333,12 @@ fn comp_data_types() {
     let class: String = String::from("Grade 10, Section A");
     println!("Class: {}", class);
     let class_slice: &str = &class[0..8];
-    println!("Class: {}", class_slice);
+    println!("Class: {}", class_slice); 
+}
+*/
+
+// Calling a value in parenthesis
+
+fn whyte_id(name: &str, age: u32, height: f32) {
+   println!("My name is {}, I am {} years old and my height is {} cm.", name, age, height);
 }
